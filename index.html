@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Cookie Club Shop</title>
+  <style>
+    body {
+      font-family: 'Trebuchet MS', sans-serif;
+      background: linear-gradient(to bottom, #fff6e5, #fff1d6);
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #d2996f;
+      color: #fff8e7;
+      padding: 25px;
+      text-align: center;
+      border-bottom: 5px solid #b5651d;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive;
+    }
+
+    header p {
+      font-style: italic;
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h2 {
+      background-color: #ffe0b3;
+      padding: 12px;
+      border-radius: 15px;
+      text-align: center;
+      color: #8b4513;
+      font-family: 'Comic Sans MS', cursive;
+      margin-top: 30px;
+      position: relative;
+    }
+
+    h2::before {
+      content: "🍪 ";
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+      background: #fffaf0;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      border: 1px solid #d2a679;
+      padding: 12px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #d2996f;
+      color: #fff8e7;
+    }
+
+    tr:nth-child(even) {
+      background-color: #fff3e0;
+    }
+
+    .form-section, .raffle-section {
+      margin-top: 40px;
+      background: #fffaf0;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .form-section h2, .raffle-section h2 {
+      background: none;
+      color: #d2996f;
+      text-align: center;
+      font-family: 'Comic Sans MS', cursive;
+    }
+
+    iframe {
+      border: none;
+      width: 100%;
+      height: 650px;
+      border-radius: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #b5651d;
+      color: #fff8e7;
+      font-style: italic;
+      margin-top: 30px;
+      box-shadow: 0 -4px 8px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🍪 The Cookie Club 🍪</h1>
+    <p>Fresh Bakes, Sweet Crafts & Fun Prizes!</p>
+  </header>
+
+  <div class="container">
+    <h2>Snacks</h2>
+    <table>
+      <tr><th>Item</th><th>Sell Price</th></tr>
+      <tr><td>Cookies</td><td>R20</td></tr>
+      <tr><td>Candy bags</td><td>R20</td></tr>
+      <tr><td>Lollipops</td><td>R5</td></tr>
+
+      <tr><td>Popcorn</td><td>R20</td></tr>
+      <tr><td>Spicy pineapple</td><td>R15</td></tr>
+      <tr><td>Samosa</td><td>R5</td></tr>
+      <tr><td>Ice cream in cups</td><td>R10</td></tr>
+    </table>
+
+    <h2>Drinks</h2>
+    <table>
+      <tr><th>Item</th><th>Sell Price</th></tr>
+      <tr><td>Blueberry cordial</td><td>R10</td></tr>
+      <tr><td>Watermelon cordial</td><td>R10</td></tr>
+    </table>
+
+    <h2>Cool Crafts</h2>
+    <table>
+      <tr><th>Item</th><th>Sell Price</th></tr>
+      <tr><td>Bracelets</td><td>R40</td></tr>
+      <tr><td>Key chain</td><td>R10</td></tr>
+      <tr><td>Colourful paper fan</td><td>R10</td></tr>
+      <tr><td>Mini pop it</td><td>R8</td></tr>
+      <tr><td>Emoji plushie</td><td>R70</td></tr>
+      <tr><td>Mini superhero plush</td><td>R80</td></tr>
+      <tr><td>Squishy</td><td>R25</td></tr>
+      <tr><td>Slinky</td><td>R25</td></tr>
+      <tr><td>Slug keychain</td><td>R25</td></tr>
+    </table>
+
+    <h2>Games</h2>
+    <table>
+      <tr><th>Item</th><th>Sell Price</th></tr>
+ 
+      <tr><td>Mini basketball</td><td>R30</td></tr>
+      <tr><td>Mini ping pong</td><td>R30</td></tr>
+      <tr><td>Nerf gun</td><td>R30</td></tr>
+    </table>
+
+    <div class="raffle-section">
+      <h2>🎟️ Raffle Prizes</h2>
+      <table>
+        <tr><th>Raffle Prize</th><th>Sell Price</th></tr>
+        <tr><td>Netball + sp</td><td>R15</td></tr>
+        <tr><td>Soccer Ball + sp</td><td>R15</td></tr>
+        <tr><td>Basketball + collage</td><td>R15</td></tr>
+      </table>
+    </div>
+
+    <div class="form-section">
+      <h2>Preorder Form</h2>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeZPN93bfC-iTyleaSk0VDR1IIMk66266oaUVd_RmOYth1w3w/viewform?embedded=true"></iframe>
+    </div>
+  </div>
+
+  <footer>
+    Thank you for supporting The Cookie Club! 🍪
+  </footer>
+</body>
+</html>
